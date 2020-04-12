@@ -1,0 +1,98 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  grid-template-rows: 100vh;
+  grid-template-areas:
+    'left right'
+  
+}
+
+
+.left__section {
+  grid-area: left;
+}
+
+
+.right__section {
+   grid-area: right;
+}
+
+
+.left__section, .right__section, .form__box, .form__footer, .form__footer span:nth-child(1) {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+.right__section h1 {
+  font-size: 25px;
+  text-align: center;
+  color: rgba(80, 80, 80, 0.7)
+}
+
+
+ .form__box {
+  width: 364px;
+  height: 260px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+}
+
+.form__footer > span:nth-child(1) {
+   flex-direction: row !important;
+  margin: 15px 0
+}
+
+span > a {
+  margin: 5px
+}
+
+
+input[type='text'] {
+border: 0.5px solid rgba(0, 0, 0, 0.5);
+box-sizing: border-box;
+width: 80%;
+height: 44px;
+font-size: 20px;
+padding: 0px 10px
+}
+
+.suubmit {
+  margin-top:20px;
+  width: 182px;
+  height: 43px;
+  background: #505050;
+  color: white
+}
+
+
+input[type='text']::placeholder {
+  margin: 0px 100px;
+  font-size: 20px;
+  opacity: 0.5
+}
+
+*:focus {
+    outline: none;
+}
+
+.info__text::before {
+  content: ' ';
+  content:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACcklEQVRIx+1VS2sUQRBu3+Jzs109IxGMb/QiiBdRBC+CHlTwoBdBgqIn8RrwEhTEi+BFFPEXrCBI2N3pmZVBELwsRAnz2I0a9aABxQcqGk0yVu/WPBLNRmPnIGxBs8z37dRXVV1Vw1jb2vY/WWjxw77kF4fctYuzeLWvc4nCAwkHZ0FU7EfHo3giX4pjMR5FbE4g+W2F4/mgVbTu8K3KKTl/NVAxzJjD517CI9+G69pEPWtFHp3WyflX38nvTETL/Ahi48Q9GCxtXKRF1HXZ/NCCSpxRaPPjSUCO2I7Y5wZnw/Mn0jT03asU12LRQIpLiWhRrAolvCTuU1g2tmkTxQY6mdydhFJUYPMUrjoag3hI3JjqdI33Kvag0xEqo/fU6ViZVgFupVXgPRrLa64LLHhD5X07WDI2pB3Me1JRKKhR0iN6F5aj2AA5/h6UYW/M1aQ4EM8xnqpaGlpEo142Fx32JRnZcGaqOa7d46tbdeR5vI+iX8x1/YkwlvdK0kwWv5pk6nYCYs+I+4JnR2tHEj5SAwxNJ47rsDvJ1OJW3MFegS1E7D5x4/i/o9OPgw2n0q0ytXhoG7vxP9/Iedjv5nKZ4G8my8OCC387i2P08ot6xVw/gcdgEB8m/l1Qgc1pQOJcZnncUT0wk0Xwi7jnimX4/IjwUdW16Tv5fYj9aGQqof+xNJfOqGPRwels2RuzillkMjpbk3xLaMOhxq+E98QNe07Hmn8al4nitNyb5wbxrydxeO/GLi2zOklczapbrbIFzfJCKROMqswJptNIXG2guprRGFf3qAJpfv7EZTYbpu7tdw2jvr++LTaxtrWthf0Eq7n8fF4wMD4AAAAASUVORK5CYII");
+  top: 122px;
+ left: 0;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+}
+
+.info h1 {
+  margin-bottom: 40px
+}
+
+.signup__link {
+color: red
+}
